@@ -10,7 +10,7 @@ seqPath = fullfile(datasetPath, 'sequences'); % sequence path
 nameSeqs = findSeqList(gtPath); % seq list
 numSeqs = length(nameSeqs);
 
-%% process the annotations and groundtruth
+% process the annotations and groundtruth
 allgt = cell(1,numSeqs);
 alldet = cell(1,numSeqs);
 
@@ -26,7 +26,7 @@ for idSeq = 1:numSeqs
     alldet{idSeq} = det(id,1:8);
 end
 
-%% claculate average precision and recall over all 10 IoU thresholds (i.e., [0.5:0.05:0.95]) of all object categories
+% claculate average precision and recall over all 10 IoU thresholds (i.e., [0.5:0.05:0.95]) of all object categories
 AP = zeros(10, 10);
 AR = zeros(10, 10, 4);
 
@@ -78,7 +78,7 @@ AR_10 = mean2(AR(:,:,2)); % the maximum recall given 10 detections per frame
 AR_100 = mean2(AR(:,:,3)); % the maximum recall given 100 detections per frame
 AR_500 = mean2(AR(:,:,4)); % the maximum recall given 500 detections per frame
 
-%% print the average precision and recall
+% print the average precision and recall values
 disp(['Average Precision  (AP) @[ IoU=0.50:0.95 | maxDets=500 ] = ' num2str(roundn(AP_all,-2)) '%.']);
 disp(['Average Precision  (AP) @[ IoU=0.50      | maxDets=500 ] = ' num2str(roundn(AP_50,-2)) '%.']);
 disp(['Average Precision  (AP) @[ IoU=0.75      | maxDets=500 ] = ' num2str(roundn(AP_75,-2)) '%.']);
