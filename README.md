@@ -16,10 +16,11 @@ Dataset
 For DET competition, there are three sets of data and labels: training data, validation data, 
 and test-challenge data. There is no overlap between the three sets. 
 
-
+                                                           Number of images
+    ----------------------------------------------------------------------------------------------
     Dataset                            Training              Validation            Test-Challenge
     ----------------------------------------------------------------------------------------------
-    Object detection in images        6,471 frames           548 frames             1,610 frames
+    Object detection in images       6,471 images            548 images             1,610 images
     ----------------------------------------------------------------------------------------------
     
 The challenge requires a participating algorithm to locate the target bounding boxes in each image. The objects to be detected are of various types including pedestrians, cars, buses, and trucks. We manually annotate the bounding boxes of different objects and ignored regiones in each image. Annotations on the training and validation sets are publicly available.
