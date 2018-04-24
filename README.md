@@ -79,4 +79,5 @@ Submission of the results will consist of TXT files with one line per predicted 
 The sample submission of Faster-RCNN detector can be found in our website.
 
 References
+
 [1] T. Lin, M. Maire, S. J. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick, "Microsoft COCO: common objects in context", in ECCV 2014.
