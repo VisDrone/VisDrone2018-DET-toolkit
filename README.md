@@ -5,6 +5,7 @@ Introduction
 This is the documentation of the VisDrone2018 competitions development kit for object detection in images (DET) challenge.
 
 This code library is for research purpose only, which is modified based on the MS-COCO [1] platforms. 
+
 The code is tested on the Windows 10 and macOS Sierra 10.12.6 systems, with the Matlab 2013a/2014b/2016b/2017b platforms.
 
 If you have any questions, please contact us (email:tju.drone.vision@gmail.com).
