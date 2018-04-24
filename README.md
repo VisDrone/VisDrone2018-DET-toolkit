@@ -40,7 +40,8 @@ DET submission format
 
 Submission of the results will consist of TXT files with one line per predicted object.It looks as follows:
 
-<target_id>,<bbox_left>,<bbox_top>,<bbox_width>,<bbox_height>,<score>,<object_category>,<truncation>,<occlusion>
+    <target_id>,<bbox_left>,<bbox_top>,<bbox_width>,<bbox_height>,<score>,<object_category>,<truncation>,<occlusion>
+
 
           Name                                                  Description
     -------------------------------------------------------------------------------------------------------------------------------
