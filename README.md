@@ -1,4 +1,4 @@
-VisDrone2018-DET Benchmark Toolkit 
+VisDrone2018-DET Toolkit for Object Detection in Images
 
 Introduction
 
@@ -28,7 +28,7 @@ The link for downloading the data can be obtained by registering for the challen
     http://www.aiskyeye.com/
  
 
-Evaluation routines:
+Evaluation Routines
 
 The notes for the folders:
 * main functions
@@ -36,7 +36,7 @@ The notes for the folders:
         -modify the dataset path and result path    
     
 
-DET submission format
+DET Submission Format
 
 Submission of the results will consist of TXT files with one line per predicted object.It looks as follows:
 
@@ -78,5 +78,5 @@ Submission of the results will consist of TXT files with one line per predicted 
 
 The sample submission of Faster-RCNN detector can be found in our website.
 
-References:
+References
 [1] T. Lin, M. Maire, S. J. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick, "Microsoft COCO: common objects in context", in ECCV 2014.
