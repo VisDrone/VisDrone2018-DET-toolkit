@@ -12,16 +12,16 @@ imgPath = fullfile(datasetPath, 'images'); % image name path
 nameImgs = findImageList(gtPath); % image list
 numImgs = length(nameImgs);
 
-%% process the annotations and groundtruth
+% process the annotations and groundtruth
 [allgt, alldet] = saveAnnoRes(gtPath, resPath, numImgs, nameImgs);
 
-%% show the groundtruth and detection results
+% show the groundtruth and detection results
 displayImage(imgPath, numImgs, nameImgs, allgt, alldet, isImgDisplay);
 
-%% claculate average precision and recall over all 10 IoU thresholds (i.e., [0.5:0.05:0.95]) of all object categories
+% claculate average precision and recall over all 10 IoU thresholds (i.e., [0.5:0.05:0.95]) of all object categories
 [AP_all, AP_50, AP_75, AR_1, AR_10, AR_100, AR_500] = calcAccuracy(numImgs, allgt, alldet);
 
-%% print the average precision and recall
+% print the average precision and recall
 disp(['Average Precision  (AP) @[ IoU=0.50:0.95 | maxDets=500 ] = ' num2str(roundn(AP_all,-2)) '%.']);
 disp(['Average Precision  (AP) @[ IoU=0.50      | maxDets=500 ] = ' num2str(roundn(AP_50,-2)) '%.']);
 disp(['Average Precision  (AP) @[ IoU=0.75      | maxDets=500 ] = ' num2str(roundn(AP_75,-2)) '%.']);
