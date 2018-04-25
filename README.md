@@ -47,7 +47,7 @@ are publicly available.
 The link for downloading the data can be obtained by registering for the challenge at
 
     http://www.aiskyeye.com/
- 
+
 ===================================================================
 Evaluation routines
 ===================================================================
@@ -56,7 +56,7 @@ The notes for the folders:
 	* evalDET.m is the main function to evaluate your detector
         -modify the dataset path and result path
         -use "isImgDisplay" to display the groundtruth and detections
-    
+
 ===================================================================
 DET submission format
 ===================================================================
@@ -71,12 +71,12 @@ Position	  Name	                                      Description
    3	  <bbox_width>	      The width in pixels of the predicted object bounding box
    4	  <bbox_height>	      The height in pixels of the predicted object bounding box
    5	     <score>	      The score in the DETECTION file indicates the confidence of the predicted bounding box enclosing an object                               instance.
-                              The score in GROUNDTRUTH file is set to 1 or 0. 1 indicates the bounding box is considered in evaluation,                               while 0 indicates the bounding box will be ignored.
+	                      The score in GROUNDTRUTH file is set to 1 or 0. 1 indicates the bounding box is considered in evaluation,                               while 0 indicates the bounding box will be ignored.
    6	<object_category>     The type of object annotated (0~11: ignored regions, pedestrian, people, bicycle, car, van, truck,                                       tricycle, awning-tricycle, bus, motor, others)
    7	   <truncation>	      The score in the DETECTION file should be set to the constant -1.
-                              The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame (i.e., no                                 truncation = 0 (truncation ratio 0%), and partial truncation = 1 (truncation ratio 1% ¡« 50%)).
+	                      The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame (i.e., no                                 truncation = 0 (truncation ratio 0%), and partial truncation = 1 (truncation ratio 1% ¡« 50%)).
    8	   <occlusion>	      The score in the DETECTION file should be set to the constant -1.
-                              The score in the GROUNDTRUTH file indicates the fraction of objects being occluded (i.e., no occlusion = 0                               (occlusion ratio 0%), partial occlusion = 1 (occlusion ratio 1% ¡« 50%), and heavy occlusion = 2                                         (occlusion ratio 50% ~ 100%)).
+	                      The score in the GROUNDTRUTH file indicates the fraction of objects being occluded (i.e., no occlusion = 0                               (occlusion ratio 0%), partial occlusion = 1 (occlusion ratio 1% ¡« 50%), and heavy occlusion = 2                                         (occlusion ratio 50% ~ 100%)).
 
 
 The detections in the ignored regions and labeled as "others" will be not considered in the evaluation. The sample submission of Faster-RCNN detector can be found in our website.
