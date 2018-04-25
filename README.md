@@ -58,15 +58,11 @@ DET Submission Format
 
 Submission of the results will consist of TXT files with one line per predicted object.It looks as follows:
 
-    <target_id>,<bbox_left>,<bbox_top>,<bbox_width>,<bbox_height>,<score>,<object_category>,<truncation>,<occlusion>
+    <bbox_left>,<bbox_top>,<bbox_width>,<bbox_height>,<score>,<object_category>,<truncation>,<occlusion>
 
 
           Name                                                  Description
-    -------------------------------------------------------------------------------------------------------------------------------
-      <target_id>	         In the DETECTION result file, the identity of the target should be set to the constant -1. 
-                             In the  GROUNDTRUTH file, the identity of the target is used to provide the temporal corresponding 
-                             relation of the bounding boxes in different frames.
-                              
+    -------------------------------------------------------------------------------------------------------------------------------     
       <bbox_left>	         The x coordinate of the top-left corner of the predicted bounding box
       
       <bbox_top>	         The y coordinate of the top-left corner of the predicted object bounding box
