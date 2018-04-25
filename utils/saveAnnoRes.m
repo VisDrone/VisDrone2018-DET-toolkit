@@ -1,5 +1,5 @@
 function [allgt, alldet] = saveAnnoRes(gtPath, resPath, numImgs, nameImgs)
-%% process the annotations and groundtruth
+% process the annotations and groundtruth
 allgt = cell(1,numImgs);
 alldet = cell(1,numImgs);
 
