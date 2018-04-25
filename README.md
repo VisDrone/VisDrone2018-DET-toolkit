@@ -70,7 +70,7 @@ Submission of the results will consist of TXT files with one line per predicted 
 <bbox_left>,<bbox_top>,<bbox_width>,<bbox_height>,<score>,<object_category>,<truncation>,<occlusion>
 
 Position	  Name	                                      Description
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------
    1	   <bbox_left>	      The x coordinate of the top-left corner of the predicted bounding box
    2	   <bbox_top>	      The y coordinate of the top-left corner of the predicted object bounding box
    3	  <bbox_width>	      The width in pixels of the predicted object bounding box
@@ -79,9 +79,9 @@ Position	  Name	                                      Description
                               The score in GROUNDTRUTH file is set to 1 or 0. 1 indicates the bounding box is considered in evaluation, while 0 indicates the bounding box will be ignored.
    6	<object_category>	  The type of object annotated (0~11: ignored regions, pedestrian, people, bicycle, car, van, truck, tricycle, awning-tricycle, bus, motor, others)
    7	   <truncation>	      The score in the DETECTION file should be set to the constant -1.
-                              The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame (i.e., no truncation = 0 (truncation ratio 0%), and partial truncation = 1 (truncation ratio 1% ¡« 50%)).
+                              The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame (i.e., no truncation = 0 (truncation ratio 0%), and partial truncation = 1 (truncation ratio 1% Â¡Â« 50%)).
    8	   <occlusion>	      The score in the DETECTION file should be set to the constant -1.
-                              The score in the GROUNDTRUTH file indicates the fraction of objects being occluded (i.e., no occlusion = 0 (occlusion ratio 0%), partial occlusion = 1 (occlusion ratio 1% ¡« 50%), and heavy occlusion = 2 (occlusion ratio 50% ~ 100%)).
+                              The score in the GROUNDTRUTH file indicates the fraction of objects being occluded (i.e., no occlusion = 0 (occlusion ratio 0%), partial occlusion = 1 (occlusion ratio 1% Â¡Â« 50%), and heavy occlusion = 2 (occlusion ratio 50% ~ 100%)).
 
 
 The detections in the ignored regions and labeled as "others" will be not considered in the evaluation. The sample submission of Faster-RCNN detector can be found in our website.
