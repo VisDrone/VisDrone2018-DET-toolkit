@@ -1,4 +1,4 @@
-function displayImage(numImgs, nameImgs, allgt, alldet, isImgDisplay) 
+function displayImage(imgPath, numImgs, nameImgs, allgt, alldet, isImgDisplay) 
 %% show the groundtruth and detection results
 if(isImgDisplay)
     for idImg = 1:numImgs
