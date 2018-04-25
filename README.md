@@ -90,7 +90,7 @@ Submission of the results will consist of TXT files with one line per predicted 
                              (occlusion ratio 50% ~ 100%)).
     ------------------------------------------------------------------------------------------------------------------------------
 
-The detections in the ignored regions and labeled as "others" will be not considered in the evaluation. The sample submission of Faster-RCNN detector can be found in our website.
+The detections in the ignored regions or labeled as "others" will be not considered in evaluation. The sample submission of the Faster-RCNN detector can be found in our website.
 
 References
 
@@ -101,7 +101,7 @@ References
 Version history
 
 1.0.1 - Apr 25, 2018
-  - Included display of groundtruth and detections
+  - The display function of groundtruth and detection results are included.
 
 1.0.0 - Apr 19, 2018
-  - initial release
+  - Initial release.
