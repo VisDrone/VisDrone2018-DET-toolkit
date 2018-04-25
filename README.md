@@ -51,8 +51,8 @@ Evaluation Routines
 The notes for the folders:
 * main functions  
 	* evalDET.m is the main function to evaluate your detector
-        -modify the dataset path and result path
-        -use "isImgDisplay" to display the groundtruth and detections    
+	  -modify the dataset path and result path
+	  -use "isImgDisplay" to display the groundtruth and detections    
 
 DET Submission Format
 
