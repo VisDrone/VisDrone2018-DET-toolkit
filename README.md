@@ -3,7 +3,6 @@ VisDrone2018-DET Benchmark Toolkit
 ===================================================================
 Introduction
 ===================================================================
-
 This is the documentation of the VisDrone2018 competitions development kit for detection in images (DET) challenge.
 
 This code library is for research purpose only, which is modified based on the PASCAL VOC [1] and MS-COCO [2] platforms. 
@@ -14,7 +13,6 @@ If you have any questions, please contact us (email:tju.drone.vision@gmail.com).
 ===================================================================
 Citation
 ===================================================================
-
 If you use our toolkit or dataset, please cite our paper as follows:
 
 @article{zhuvisdrone2018,
@@ -32,7 +30,6 @@ If you use our toolkit or dataset, please cite our paper as follows:
 ===================================================================
 Dataset
 ===================================================================
-
 For DET competition, there are three sets of data and labels: training data, validation data, 
 and test-challenge data. There is no overlap between the three sets. 
 
@@ -54,7 +51,6 @@ The link for downloading the data can be obtained by registering for the challen
 ===================================================================
 Evaluation routines
 ===================================================================
-
 The notes for the folders:
 * main functions
 	* evalDET.m is the main function to evaluate your detector
@@ -64,7 +60,6 @@ The notes for the folders:
 ===================================================================
 DET submission format
 ===================================================================
-
 Submission of the results will consist of TXT files with one line per predicted object.It looks as follows:
 
 <bbox_left>,<bbox_top>,<bbox_width>,<bbox_height>,<score>,<object_category>,<truncation>,<occlusion>
@@ -75,13 +70,13 @@ Position	  Name	                                      Description
    2	   <bbox_top>	      The y coordinate of the top-left corner of the predicted object bounding box
    3	  <bbox_width>	      The width in pixels of the predicted object bounding box
    4	  <bbox_height>	      The height in pixels of the predicted object bounding box
-   5	     <score>	      The score in the DETECTION file indicates the confidence of the predicted bounding box enclosing an object instance.
-                              The score in GROUNDTRUTH file is set to 1 or 0. 1 indicates the bounding box is considered in evaluation, while 0 indicates the bounding box will be ignored.
-   6	<object_category>	  The type of object annotated (0~11: ignored regions, pedestrian, people, bicycle, car, van, truck, tricycle, awning-tricycle, bus, motor, others)
+   5	     <score>	      The score in the DETECTION file indicates the confidence of the predicted bounding box enclosing an object                               instance.
+                              The score in GROUNDTRUTH file is set to 1 or 0. 1 indicates the bounding box is considered in evaluation,                               while 0 indicates the bounding box will be ignored.
+   6	<object_category>     The type of object annotated (0~11: ignored regions, pedestrian, people, bicycle, car, van, truck,                                       tricycle, awning-tricycle, bus, motor, others)
    7	   <truncation>	      The score in the DETECTION file should be set to the constant -1.
-                              The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame (i.e., no truncation = 0 (truncation ratio 0%), and partial truncation = 1 (truncation ratio 1% ¡« 50%)).
+                              The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame (i.e., no                                 truncation = 0 (truncation ratio 0%), and partial truncation = 1 (truncation ratio 1% ¡« 50%)).
    8	   <occlusion>	      The score in the DETECTION file should be set to the constant -1.
-                              The score in the GROUNDTRUTH file indicates the fraction of objects being occluded (i.e., no occlusion = 0 (occlusion ratio 0%), partial occlusion = 1 (occlusion ratio 1% ¡« 50%), and heavy occlusion = 2 (occlusion ratio 50% ~ 100%)).
+                              The score in the GROUNDTRUTH file indicates the fraction of objects being occluded (i.e., no occlusion = 0                               (occlusion ratio 0%), partial occlusion = 1 (occlusion ratio 1% ¡« 50%), and heavy occlusion = 2                                         (occlusion ratio 50% ~ 100%)).
 
 
 The detections in the ignored regions and labeled as "others" will be not considered in the evaluation. The sample submission of Faster-RCNN detector can be found in our website.
