@@ -1,5 +1,5 @@
 function displayImage(imgPath, numImgs, nameImgs, allgt, alldet, isImgDisplay) 
-% show the groundtruth and detection results
+%% show the groundtruth and detection results
 if(isImgDisplay)
     for idImg = 1:numImgs
         img = imread(fullfile(imgPath, [nameImgs{idImg}(1:end-4) '.jpg']));
@@ -31,6 +31,6 @@ if(isImgDisplay)
 
         title(['#' num2str(idImg) '/' num2str(numImgs) '-->{\color{black}ignored / \color{green}groundtruth / \color{red}detection}']);
         pause(0.5);
-        close all;
+%         close all;
     end
 end

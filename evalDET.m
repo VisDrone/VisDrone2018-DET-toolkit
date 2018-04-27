@@ -1,24 +1,27 @@
-clc;
+% clc;
 clear all;close all;
 warning off; %#ok<WNOFF>
 addpath('utils');
 
 isImgDisplay = false; % flag to display the groundtruth and detections
-datasetPath = 'VisDrone2018-DET-test-challenge\'; % dataset path
-resPath = 'Faster-RCNN_results-test-challenge\'; % result path
+isNMS = false; % flag to conduct NMS
+nmsThre = 0.6; % threshold of NMS
+
+datasetPath = '..\VisDrone2018-DET-test-challenge\'; % dataset path
+resPath = '..\Faster-RCNN_results-test-challenge\'; % result path
 
 gtPath = fullfile(datasetPath, 'annotations'); % annotation path
 imgPath = fullfile(datasetPath, 'images'); % image name path
 nameImgs = findImageList(gtPath); % image list
-numImgs = length(nameImgs);
+numImgs = length(nameImgs); % number of images
 
 % process the annotations and groundtruth
-[allgt, alldet] = saveAnnoRes(gtPath, resPath, numImgs, nameImgs);
+[allgt, alldet] = saveAnnoRes(gtPath, resPath, imgPath, numImgs, nameImgs, isNMS, nmsThre);
 
 % show the groundtruth and detection results
 displayImage(imgPath, numImgs, nameImgs, allgt, alldet, isImgDisplay);
 
-% claculate average precision and recall over all 10 IoU thresholds (i.e., [0.5:0.05:0.95]) of all object categories
+% claculate average precision and recall over all 10 IoU thresholds (i.e., [0.50:0.05:0.95]) of all object categories
 [AP_all, AP_50, AP_75, AR_1, AR_10, AR_100, AR_500] = calcAccuracy(numImgs, allgt, alldet);
 
 % print the average precision and recall
