@@ -89,7 +89,7 @@ References
 [1] E. Park, W. Liu, O. Russakovsky, J. Deng, F.-F. Li, and A. Berg, "Large Scale Visual Recognition Challenge 2017", http://imagenet.org/challenges/LSVRC/2017 
 [2] T. Lin, M. Maire, S. J. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick, "Microsoft COCO: common objects in context", in ECCV 2014.
 
-Version history
+Version History
 
 1.0.2 - Apr 27, 2018
 
