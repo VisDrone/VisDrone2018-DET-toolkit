@@ -31,11 +31,11 @@ Dataset
 For DET competition, there are three sets of data and labels: training data, validation data, and test-challenge data. There is no overlap between the three sets.
 
                                                             Number of images
-    ----------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------
       Dataset                            Training              Validation            Test-Challenge
-    ----------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------
       Object detection in images       6,471 images            548 images             1,580 images
-    ----------------------------------------------------------------------------------------------
+    ---------------------------------------------------------------------------------------------------
 The challenge requires a participating algorithm to locate the target bounding boxes in each image. The objects to be detected are of various types including pedestrians, cars, buses, and trucks. We manually annotate the bounding boxes of different objects and ignored regiones in each image. Annotations on the training and validation sets are publicly available.
 
 The link for downloading the data can be obtained by registering for the challenge at
@@ -55,7 +55,7 @@ Submission of the results will consist of TXT files with one line per predicted 
 
 
         Name                                                  Description
-   -------------------------------------------------------------------------------------------------------------------------------     
+    -------------------------------------------------------------------------------------------------------------------------------     
      <bbox_left>	     The x coordinate of the top-left corner of the predicted bounding box
   
      <bbox_top>	     The y coordinate of the top-left corner of the predicted object bounding box
@@ -64,7 +64,7 @@ Submission of the results will consist of TXT files with one line per predicted 
  
     <bbox_height>	     The height in pixels of the predicted object bounding box
  
-    <score>	             The score in the DETECTION file indicates the confidence of the predicted bounding box enclosing 
+       <score>	     The score in the DETECTION file indicates the confidence of the predicted bounding box enclosing 
                          an object instance.
                          The score in GROUNDTRUTH file is set to 1 or 0. 1 indicates the bounding box is considered in evaluation, 
                          while 0 indicates the bounding box will be ignored.
@@ -77,7 +77,7 @@ Submission of the results will consist of TXT files with one line per predicted 
                          The score in the GROUNDTRUTH file indicates the degree of object parts appears outside a frame 
                          (i.e., no truncation = 0 (truncation ratio 0%), and partial truncation = 1 (truncation ratio 1% ~ 50%)).
                           
-     <occlusion>	     The score in the DETECTION file should be set to the constant -1.
+    <occlusion>	     The score in the DETECTION file should be set to the constant -1.
                          The score in the GROUNDTRUTH file indicates the fraction of objects being occluded (i.e., no occlusion = 0 
                          (occlusion ratio 0%), partial occlusion = 1 (occlusion ratio 1% ~ 50%), and heavy occlusion = 2 
                          (occlusion ratio 50% ~ 100%)).
