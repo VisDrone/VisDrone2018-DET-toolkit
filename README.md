@@ -91,6 +91,12 @@ References
 
 Version History
 
+1.0.3 - Jun 29, 2018
+
+The nms function is removed to avoid confusion.
+The detections in ignored regions are removed.
+The bugs to calculate the overlap score are fixed.
+
 1.0.2 - Apr 27, 2018
 
 The nms function is included.
