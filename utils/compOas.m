@@ -37,9 +37,9 @@ for i=1:m
     h=min(de(i,2),ge(j,2))-max(dt(i,2),gt(j,2)); if(h<=0), continue; end
     t=w*h; 
     if(ig(j)) 
-        u=da(i)+ga(j)-t;
+        u=da(i);
     else
-        u=da(i); 
+        u=da(i)+ga(j)-t; 
     end
     oa(i,j)=t/u;
   end
