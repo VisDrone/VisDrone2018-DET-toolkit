@@ -1,11 +1,9 @@
-% clc;
+clc;
 clear all;close all;
-warning off; %#ok<WNOFF>
+warning off all;
 addpath('utils');
 
 isImgDisplay = false; % flag to display the groundtruth and detections
-isNMS = false; % flag to conduct NMS
-nmsThre = 0.6; % threshold of NMS
 
 datasetPath = '..\VisDrone2018-DET-test-challenge\'; % dataset path
 resPath = '..\Faster-RCNN_results-test-challenge\'; % result path
@@ -16,7 +14,7 @@ nameImgs = findImageList(gtPath); % image list
 numImgs = length(nameImgs); % number of images
 
 % process the annotations and groundtruth
-[allgt, alldet] = saveAnnoRes(gtPath, resPath, imgPath, numImgs, nameImgs, isNMS, nmsThre);
+[allgt, alldet] = saveAnnoRes(gtPath, resPath, imgPath, numImgs, nameImgs);
 
 % show the groundtruth and detection results
 displayImage(imgPath, numImgs, nameImgs, allgt, alldet, isImgDisplay);
