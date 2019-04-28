@@ -1,4 +1,4 @@
-VisDrone2018-DET Toolkit for Object Detection in Images
+VisDrone2019-DET Toolkit for Object Detection in Images
 
 Introduction
 
@@ -25,6 +25,13 @@ journal={arXiv preprint:1804.07437},
 year={2018}
 }
 
+@InProceedings{Zhu_2018_ECCV_Workshops,
+author = {Zhu, Pengfei and Wen, Longyin and Du, Dawei and Bian, Xiao and Ling, Haibin and Hu, Qinghua and Nie, Qinqin and Cheng, Hao and Liu, Chenfeng and Liu, Xiaoyu and Ma, Wenya and Wu, Haotian and Wang, Lianjie and Schumann, Arne and Brown, Chase and Qian, Chen and Li, Chengzheng and Li, Dongdong and Michail, Emmanouil and Zhang, Fan and Ni, Feng and Zhu, Feng and Wang, Guanghui and Zhang, Haipeng and Deng, Han and Liu, Hao and Wang, Haoran and Qiu, Heqian and Qi, Honggang and Shi, Honghui and Li, Hongliang and Xu, Hongyu and Lin, Hu and Kompatsiaris, Ioannis and Cheng, Jian and Wang, Jianqiang and Yang, Jianxiu and Zhou, Jingkai and Zhao, Juanping and Joseph, K. J. and Duan, Kaiwen and Suresh, Karthik and Bo, Ke and Wang, Ke and Avgerinakis, Konstantinos and Sommer, Lars and Zhang, Lei and Yang, Li and Cheng, Lin and Ma, Lin and Lu, Liyu and Ding, Lu and Huang, Minyu and Kumar Vedurupaka, Naveen and Mamgain, Nehal and Bansal, Nitin and Acatay, Oliver and Giannakeris, Panagiotis and Wang, Qian and Zhao, Qijie and Huang, Qingming and Liu, Qiong and Cheng, Qishang and Sun, Qiuchen and Laganire, Robert and Jiang, Sheng and Wang, Shengjin and Wei, Shubo and Wang, Siwei and Vrochidis, Stefanos and Wang, Sujuan and Lee, Tiaojio and Sajid, Usman and Balasubramanian, Vineeth N. and Li, Wei and Zhang, Wei and Wu, Weikun and Ma, Wenchi and He, Wenrui and Yang, Wenzhe and Chen, Xiaoyu and Sun, Xin and Luo, Xinbin and Lian, Xintao and Li, Xiufang and Kuai, Yangliu and Li, Yali and Luo, Yi and Zhang, Yifan and Liu, Yiling and Li, Ying and Wang, Yong and Wang, Yongtao and Wu, Yuanwei and Fan, Yue and Wei, Yunchao and Zhang, Yuqin and Wang, Zexin and Wang, Zhangyang and Xia, Zhaoyue and Cui, Zhen and He, Zhenwei and Deng, Zhipeng and Guo, Zhiyao and Song, Zichen},
+title = {VisDrone-DET2018: The Vision Meets Drone Object Detection in Image Challenge Results},
+booktitle = {The European Conference on Computer Vision (ECCV) Workshops},
+month = {September},
+year = {2018}
+}
 
 Dataset
 
@@ -90,6 +97,10 @@ References
 [2] T. Lin, M. Maire, S. J. Belongie, J. Hays, P. Perona, D. Ramanan, P. Dollar, and C. L. Zitnick, "Microsoft COCO: common objects in context", in ECCV 2014.
 
 Version History
+
+1.0.4 - Apr 28, 2019
+
+The readme file is updated.
 
 1.0.3 - Jun 29, 2018
 
