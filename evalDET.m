@@ -5,8 +5,8 @@ addpath('utils');
 
 isImgDisplay = false; % flag to display the groundtruth and detections
 
-datasetPath = '..\VisDrone2018-DET-test-challenge\'; % dataset path
-resPath = '..\Faster-RCNN_results-test-challenge\'; % result path
+datasetPath = '..\VisDrone2019-DET-test-challenge\'; % dataset path
+resPath = '..\DET_results-test-challenge\'; % result path
 
 gtPath = fullfile(datasetPath, 'annotations'); % annotation path
 imgPath = fullfile(datasetPath, 'images'); % image name path
